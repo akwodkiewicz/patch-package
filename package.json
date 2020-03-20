@@ -20,7 +20,8 @@
     "clean": "rimraf dist patch-package.test*.tgz",
     "format": "prettier --no-semi --write --trailing-comma=all src{/**,}/*.ts integration-tests{/**,}/*.ts property-based-tests{/**,}/*.ts",
     "prepack": "rimraf dist/**/*.test.js",
-    "test": "./run-tests.sh --runInBand"
+    "test": "./run-tests.sh --runInBand",
+    "install": "yarn run build"
   },
   "lint-staged": {
     "*.ts": [
